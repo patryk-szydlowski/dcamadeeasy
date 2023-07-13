@@ -1,0 +1,21 @@
+# code editors
+.idea
+.vscode
+.fleet
+
+# devenv
+.direnv
+.devenv*
+devenv.local.nix
+.pre-commit-config.yaml
+
+# node
+node_modules
+
+# caches
+.wrangler
+.eslintcache
+tsconfig.tsbuildinfo
+
+# environment variables
+.dev.vars

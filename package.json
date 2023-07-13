@@ -1,0 +1,37 @@
+{
+  "name": "dcamadeeasy",
+  "description": "The easiest Dollar-Cost Averaging platform",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@8.6.5",
+  "engines": {
+    "node": "20.x.x",
+    "pnpm": "8.x.x",
+    "npm": "use pnpm",
+    "yarn": "use pnpm"
+  },
+  "scripts": {
+    "test.unit": "vitest",
+    "lint.tsc": "tsc --noEmit",
+    "lint.eslint": "eslint . --cache",
+    "lint.prettier": "prettier . --cache --check",
+    "fmt.eslint": "eslint . --cache --fix",
+    "fmt.prettier": "prettier . --cache --write"
+  },
+  "devDependencies": {
+    "@eslint/js": "8.44.0",
+    "@tsconfig/esm": "1.0.4",
+    "@tsconfig/strictest": "2.0.1",
+    "@types/eslint": "8.44.0",
+    "@types/eslint__js": "8.42.0",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "eslint": "8.44.0",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "prettier": "3.0.0",
+    "typescript": "5.1.6",
+    "vite": "4.4.4",
+    "vite-tsconfig-paths": "4.2.0",
+    "vitest": "0.33.0"
+  }
+}
