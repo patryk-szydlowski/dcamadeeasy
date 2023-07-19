@@ -3,7 +3,9 @@
   "compilerOptions": {
     "noEmit": true,
     "incremental": true,
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom", "dom.iterable", "webworker"],
+    "target": "esnext",
+    "types": ["vite/client"],
     "paths": {
       "~/*": ["./src/*"]
     }

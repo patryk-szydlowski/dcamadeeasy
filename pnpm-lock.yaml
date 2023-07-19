@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  ts-pattern:
+    specifier: 5.0.3
+    version: 5.0.3
+
 devDependencies:
   '@eslint/js':
     specifier: 8.44.0
@@ -47,6 +52,9 @@ devDependencies:
   vitest:
     specifier: 0.33.0
     version: 0.33.0
+  vitest-mock-extended:
+    specifier: 1.1.4
+    version: 1.1.4(typescript@5.1.6)(vitest@0.33.0)
 
 packages:
 
@@ -1444,6 +1452,18 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /ts-essentials@9.3.2(typescript@5.1.6):
+    resolution: {integrity: sha512-JxKJzuWqH1MmH4ZFHtJzGEhkfN3QvVR3C3w+4BIoWeoY68UVVoA2Np/Bca9z0IPSErVCWhv439aT0We4Dks8kQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
+    dependencies:
+      typescript: 5.1.6
+    dev: true
+
+  /ts-pattern@5.0.3:
+    resolution: {integrity: sha512-JMfGCcuRz0/efyv7vI71QgIp7en2n7KxQ/cFk9nlyo8eFFgsa6TEfbnKw3N5mLGo7Mf8oUwOyRpTEqXU0kuV+w==}
+    dev: false
+
   /tsconfck@2.1.2(typescript@5.1.6):
     resolution: {integrity: sha512-ghqN1b0puy3MhhviwO2kGF8SeMDNhEbnKxjK7h6+fvY9JAxqvXi8y5NAHSQv687OVboS2uZIByzGd45/YxrRHg==}
     engines: {node: ^14.13.1 || ^16 || >=18}
@@ -1577,6 +1597,17 @@ packages:
       rollup: 3.26.3
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /vitest-mock-extended@1.1.4(typescript@5.1.6)(vitest@0.33.0):
+    resolution: {integrity: sha512-MKPdepFjk0CE7Ocb5txntHK/sloHO9s0Kk9dr630uL03shRSHMkZtSs5CBPsbJ8K/CvYLv0GHUmMt2zWks2eXg==}
+    peerDependencies:
+      typescript: 3.x || 4.x || 5.x
+      vitest: '>=0.31.1'
+    dependencies:
+      ts-essentials: 9.3.2(typescript@5.1.6)
+      typescript: 5.1.6
+      vitest: 0.33.0
     dev: true
 
   /vitest@0.33.0:
