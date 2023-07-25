@@ -19,9 +19,12 @@
     "fmt.prettier": "prettier . --cache --write"
   },
   "dependencies": {
+    "lodash-es": "4.17.21",
     "ts-pattern": "5.0.3"
   },
   "devDependencies": {
+    "@types/lodash": "4.14.195",
+    "@types/lodash-es": "4.17.8",
     "@eslint/js": "8.44.0",
     "@tsconfig/esm": "1.0.4",
     "@tsconfig/strictest": "2.0.1",

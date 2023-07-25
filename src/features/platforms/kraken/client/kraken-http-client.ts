@@ -27,12 +27,15 @@ export type KrakenResponse =
 export interface TradableAssetPairsEndpoint {
   type: "public";
   name: "AssetPairs";
-  options?: never;
+  options?: {
+    pair?: string;
+  };
 }
 
 export interface TradableAssetPairsResponse {
   name: "AssetPairs";
-  result: Record<string, { altname: string }>;
+  error: string[];
+  result: Record<string, { altname: string; base: string; quote: string }>;
 }
 
 export interface TickerEndpoint {
@@ -45,6 +48,7 @@ export interface TickerEndpoint {
 
 export interface TickerResponse {
   name: "Ticker";
+  error: string[];
   result: Record<string, { a: [price: string]; b: [price: string] }>;
 }
 
@@ -56,6 +60,7 @@ export interface BalanceEndpoint {
 
 export interface BalanceResponse {
   name: "Balance";
+  error: string[];
   result: Record<string, string>;
 }
 
@@ -73,6 +78,7 @@ export interface AddOrderEndpoint {
 
 export interface AddOrderResponse {
   name: "AddOrder";
+  error: string[];
   result: {
     txid: string[];
     descr: { order: string };
